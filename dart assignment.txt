@@ -1,0 +1,387 @@
+void main() {
+// //   Question1
+// // Operators in Dart
+
+// // Different types of operators in Dart:
+// // The following are the various types of operators in Dart:
+// // 1.	Arithmetic Operators
+// // 2.	Relational Operators
+// // 3.	Logical Operators
+
+
+// // 1. Arithmetic Operators:
+// // These class of operators contain those operators which are used to perform arithmetic operation on the operands. They are binary operators i.e they act on two operands. They go like this: 
+// // Operator Symbol	Operator Name	Operator Description
+// // +	Addition	Use to add two operands
+// // –	Subtraction	Use to subtract two operands
+// // -expr	Unary Minus	It is Use to reverse the sign of the expression
+// // *	Multiply	Use to multiply two operands
+// // /	Division	Use to divide two operands
+// // ~/	Division	Use two divide two operands but give output in integer
+// // %	Modulus	Use to give remainder of two operands
+
+
+
+
+
+
+
+
+
+// // Example: Using Arithmetic Operators in the program 
+// // •	Dart
+
+
+
+// //     int a = 2;
+// //     int b = 3;
+ 
+// //     // Adding a and b
+// //     var c = a + b;
+// //     print("Sum of a and b is $c");
+ 
+// //     // Subtracting a and b
+// //     var d = a - b;
+// //     print("The difference between a and b is $d");
+ 
+// //     // Using unary minus
+// //     var e = -d;
+// //     print("The negation of difference between a and b is $e");
+ 
+// //     // Multiplication of a and b
+// //     var f = a * b;
+// //     print("The product of a and b is $f");
+ 
+// //     // Division of a and b
+// //     var g = b / a;
+// //     print("The quotient of a and b is $g");
+ 
+// //     // Using ~/ to divide a and b
+// //     var h = b ~ / a;
+// //     print("The quotient of a and b is $h");
+ 
+// //     // Remainder of a and b
+// //     var i = b % a;
+// //     print("The remainder of a and b is $i");
+// // }
+// // Output: 
+// // Sum of a and b is 5
+// // The difference between a and b is -1
+// // The negation of difference between a and b is 1
+// // Product of a and b is 6
+// // The quotient of a and b is 1.5
+// // The quotient of a and b is 1
+// // The remainder of a and b is 1
+
+// // 2. Relational Operators:
+// // These class of operators contain those operators which are used to perform relational operation on the operands. It goes like this: 
+// // Operator Symbol	Operator Name	Operator Description
+// // >	Greater than	Check which operand is bigger and give result as boolean expression.
+// // <	Less than	Check which operand is smaller and give result as boolean expression.
+// // >=	Greater than or equal to	Check which operand is greater or equal to each other and give result as boolean expression.
+// // <=	less than equal to	Check which operand is less than or equal to each other and give result as boolean expression.
+// // ==	Equal to	Check whether the operand are equal to each other or not and give result as boolean expression.
+// // !=	Not Equal to	Check whether the operand are not equal to each other or not and give result as boolean expression.
+// // Example: Using Relational Operators in the program 
+// // •	Dart
+// // void main()
+// // {
+// //     int a = 2;
+// //     int b = 3;
+ 
+// //     // Greater between a and b
+// //     var c = a > b;
+// //     print("a is greater than b is $c");
+ 
+// //     // Smaller between a and b
+// //     var d = a < b;
+// //     print("a is smaller than b is $d");
+ 
+// //     // Greater than or equal to between a and b
+// //     var e = a >= b;
+// //     print("a is greater than b is $e");
+ 
+// //     // Less than or equal to between a and b
+// //     var f = a <= b;
+// //     print("a is smaller than b is $f");
+ 
+// //     // Equality between a and b
+// //     var g = b == a;
+// //     print("a and b are equal is $g");
+ 
+// //     // Unequality between a and b
+// //     var h = b != a;
+// //     print("a and b are not equal is $h");
+// // }
+
+
+
+
+
+
+
+// // Output: 
+// // a is greater than b is false
+// // a is smaller than b is true
+// // a is greater than b is false
+// // a is smaller than b is true
+// // a and b are equal is false
+// // a and b are not equal is true 
+
+// // 3. Logical Operators:
+// // These class of operators contain those operators which are used to logically combine two or more conditions of the operands. It goes like this: 
+
+
+
+// // Operator Symbol	Operator Name	Operator Description
+// // &&	And Operator	Use to add two conditions and if both are true than it will return true.
+// // ||	Or Operator	Use to add two conditions and if even one of them is true than it will return true.
+// // !	Not Operator	It is use to reverse the result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Example: Using Logical Operators in the program 
+// // •	Dart
+// // void main()
+// // {
+// //     int a = 5;
+// //     int b = 7;
+ 
+// //     // Using And Operator
+// //     bool c = a > 10 && b < 10;
+// //     print(c);
+ 
+// //     // Using Or Operator
+// //     bool d = a > 10 || b < 10;
+// //     print(d);
+ 
+// //     // Using Not Operator
+// //     bool e = !(a > 10);
+// //     print(e);
+// // }
+// // Output: 
+// // false
+// // true
+// // true
+
+  
+// //   Question 2
+  var a = 2;
+    var b = 1;
+  var result = --a;
+  print(result);
+  var result1= --a - --b;
+  print (result1);
+  var result2= --a - --b + ++b;
+  print(result2);
+  var result3= --a - --b + ++b + b--;
+  print(result3);
+//    Question3
+  var ticket= 600;
+  var  ticket1= 600*5;
+// //   QUESTION 4
+
+List<int> first = [1,2,3,4,5,6,7];
+List<int> second = [3,5,6,7,9,10];
+List<int> difference = first.toSet().difference(second.toSet()).toList();
+print(difference.toString());
+
+
+
+
+// //   Question6
+    
+// // DART DATA TYPES
+
+// // Data Type	Keyword	Description
+// // Number	int, double, num	Numbers in Dart are used to represent numeric literals
+// // Strings	String	Strings represent a sequence of characters
+// // Booleans	bool	It represents Boolean values true and false
+// // Lists	List	It is an ordered group of objects
+// // Maps	Map	It represents a set of values as key-value pairs
+// // 1. Number: The number in Dart Programming is the data type that is used to hold the numeric value. Dart numbers can be classified as: 
+// // •	The int data type is used to represent whole numbers.
+// // •	The double data type is used to represent 64-bit floating-point numbers.
+// // •	The num type is an inherited data type of the int and double types.
+// // •	Dart
+// // void main() {
+    
+// //    // declare an integer
+// //    int num1 = 2;             
+       
+// //    // declare a double value
+// //    double num2 = 1.5;  
+  
+// //    // print the values
+// //    print(num1);
+// //    print(num2);
+// //    var a1 = num.parse("1");  
+// //    var b1 = num.parse("2.34");  
+     
+// //    var c1 = a1+b1;   
+// //    print("Product = ${c1}"); 
+// // }
+ 
+// // Output: 
+
+
+
+// // 2
+// // 1.5
+// // Product = 3.34
+// // 2. String: It used to represent a sequence of characters. It is a sequence of UTF-16 code units. The keyword string is used to represent string literals. String values are embedded in either single or double-quotes. 
+ 
+// // void main() {
+    
+// //     String string = 'Geeks''for''Geeks'; 
+// //     String str = 'Coding is '; 
+// //     String str1 = 'Fun'; 
+// //     print (string);  
+// //     print (str + str1);
+// // }
+ 
+// // Output: 
+// // GeeksforGeeks
+// // Coding is Fun
+// // 3. Boolean: It represents Boolean values true and false. The keyword bool is used to represent a Boolean literal in DART. 
+ 
+// // void main() {
+// //   String str = 'Coding is '; 
+// //   String str1 = 'Fun'; 
+    
+// //   bool val = (str==str1);
+// //   print (val);  
+// // }
+ 
+// // Output: 
+
+
+
+// // false
+// // 4. List: List data type is similar to arrays in other programming languages. A list is used to represent a collection of objects. It is an ordered group of objects. 
+ 
+// // void main() 
+// // { 
+// //     List gfg = new List(3); 
+// //     gfg[0] = 'Geeks'; 
+// //     gfg[1] = 'For'; 
+// //     gfg[2] = 'Geeks'; 
+    
+// //     print(gfg); 
+// //     print(gfg[0]); 
+// // } 
+ 
+// // Output: 
+ 
+// // [Geeks, For, Geeks]
+// // Geeks
+// // 5. Map: The Map object is a key and value pair. Keys and values on a map may be of any type. It is a dynamic collection. 
+ 
+// // void main() { 
+// //   Map gfg = new Map(); 
+// //   gfg['First'] = 'Geeks'; 
+// //   gfg['Second'] = 'For'; 
+// //   gfg['Third'] = 'Geeks';
+// //   print(gfg); 
+// // }  
+ 	
+// // Output: 
+// // {First: Geeks, Second: For, Third: Geeks}
+// // Note: If the type of a variable is not specified, the variable’s type is dynamic. The dynamic keyword is used as a type annotation explicitly.
+// //  Question 7
+var answer = ['7\n','14\n','21\n', '28\n', '35\n', '42\n', '49\n', '56\n', '63\n', '70\n'];
+
+var number = ['7 x 1', '7 x 2', '7 x 3', '7 x 4', '7 x 5', '7 x 6', '7 x 7', '7 x 8', '7 x 9', '7 x 10'];
+
+var data = Map.fromIterables (number, answer);
+
+print(data); 
+
+// //   QUESTION 9
+
+
+List marks = [250, 350, 450];
+
+Map map = new Map.fromIterable(marks,
+
+    key: (item) => item.toString(),
+
+    value: (item) => item * 100/500);
+
+  print(map);
+//   QUESTION 10
+  
+  var string = 'hyderabad';
+
+print(string.replaceAll('hyder', 'islam'));
+  
+// //  Question 5
+// //    To guard access to a property or method of an object that might be null, put a question mark (?)
+
+ 
+
+// // null-aware operator is ??, which returns the expression on its left unless that expression’s value is null, in which case it evaluates and returns the expression on its right
+
+// //   QUESTION 11
+// //     Samples of acceptable variable names:   YES	 Samples of unacceptable variable names:   NO
+// // Grade 	                                           Grade(Test)
+// // GradeOnTest	                                       GradeTest#1
+// // Grade_On_Test                                    	3rd_Test_Grade
+// // GradeTest                                       	Grade Test   (has a space)
+ 
+//   Question 12
+  print("Please Enter the name of the Customer");
+
+  var name= stdin.readLineSync();
+
+  print("Please Enter the Billing Month");
+
+  var mon = stdin.readLineSync();
+
+  print("Please Enter the Units");
+
+  var unit = int.parse(stdin.readLineSync()!);
+
+  print("Please Enter the charges per unit");
+
+  var chr = int.parse(stdin.readLineSync()!);
+
+  print("Please Enter the surcharge");
+
+  var sur = int.parse(stdin.readLineSync()!);
+
+  var net = unit * chr; 
+
+  var gross = net + sur;
+
+  print("\n\nKE BILL");
+
+  print("------------------");
+
+  print("Customer Name:         $name");
+
+  print("No. of Units:          $unit");
+
+  print("Charges per Unit:      $chr");
+
+  print("Surcharge:             $sur");
+
+  print("Net Amount:            $net");
+
+  print("Gross Amount           $gross");
+ }
+
